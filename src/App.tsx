@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import useAxios from "./hooks/useAxios";
 import axios from "./apis/produit";
 import Carousel from "./components/HomePage/Carousel/carousel";
+import PopularCollections from "./components/HomePage/PopularCollections/PopularCollections";
 
 const App = () => {
   //! fetch api produit
@@ -20,6 +21,7 @@ const App = () => {
     <div>
       <Navbar />
       <Carousel />
+      <PopularCollections />
 
       {!loading && !error && data && <Products />}
       {!loading && !error && !data && <div>No data</div>}
