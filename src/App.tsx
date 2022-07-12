@@ -7,6 +7,9 @@ import useAxios from "./hooks/useAxios";
 import axios from "./apis/produit";
 import Carousel from "./components/HomePage/Carousel/carousel";
 import PopularCollections from "./components/HomePage/PopularCollections/PopularCollections";
+import BestSellingProducts from "./components/HomePage/bestSellingProducts/BestSellingProducts";
+import AccessoriesAndMoreSection from "./components/HomePage/AccessoriesAndMoreSection/AccessoriesAndMoreSection";
+import { ShopOurBrands } from "./components/HomePage/ShopOurBrands/ShopOurBrands";
 
 export type ProduitModel = {
   count: number;
@@ -54,8 +57,11 @@ const App = () => {
       <Navbar />
       <Carousel />
       <PopularCollections />
+      <BestSellingProducts />
+      <AccessoriesAndMoreSection />
+      <ShopOurBrands />
 
-      {!loading && !error && data && (
+      {/* {!loading && !error && data && (
         <div>
           <img src={castedResults[0].photo_principal} alt="product" />
           <Products />
@@ -63,7 +69,7 @@ const App = () => {
       )}
       {!loading && !error && !data && <div>No data</div>}
       {loading && <div>Loading...</div>}
-      {!loading && error && <div>Error: {error}</div>}
+      {!loading && error && <div>Error: {error}</div>} */}
     </div>
   );
 };

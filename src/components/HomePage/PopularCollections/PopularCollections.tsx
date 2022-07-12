@@ -3,13 +3,7 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  useMediaQuery,
-} from "@material-ui/core";
+import { Card, CardMedia, Typography, useMediaQuery } from "@material-ui/core";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -76,7 +70,7 @@ export default function PopularCollections() {
                         position: "absolute",
                         color: "white",
                         bottom: "2%",
-                        left: "13%",
+                        left: "90px",
                         transform: "translateX(-50%)",
                       }}
                     >
@@ -119,7 +113,7 @@ export default function PopularCollections() {
                         position: "absolute",
                         color: "white",
                         bottom: "2%",
-                        left: "22%",
+                        left: "80px",
                         transform: "translateX(-50%)",
                       }}
                     >
@@ -162,7 +156,7 @@ export default function PopularCollections() {
                         position: "absolute",
                         color: "white",
                         bottom: "2%",
-                        left: "16%",
+                        left: "58px",
                         transform: "translateX(-50%)",
                       }}
                     >
@@ -205,7 +199,7 @@ export default function PopularCollections() {
                         position: "absolute",
                         color: "white",
                         bottom: "2%",
-                        left: "33%",
+                        left: "116px",
                         transform: "translateX(-50%)",
                       }}
                     >
@@ -248,7 +242,7 @@ export default function PopularCollections() {
                         position: "absolute",
                         color: "white",
                         bottom: "2%",
-                        left: "21%",
+                        left: "75px",
                         transform: "translateX(-50%)",
                       }}
                     >
@@ -261,11 +255,6 @@ export default function PopularCollections() {
           </Item>
         </Grid>
         <Grid item xs={12} md={6} height={isMobile ? "100vw" : "25vw"}>
-          {/* <img
-              src="https://media.istockphoto.com/photos/caucasian-muscular-man-kneeling-and-clapping-hands-in-front-of-him-picture-id1126509424?k=20&m=1126509424&s=612x612&w=0&h=45MCjJAyNlQJqxEN4Kv9UVMd4VeVt-S7EjbvVC4WoCQ="
-              alt="https://media.istockphoto.com/photos/caucasian-muscular-man-kneeling-and-clapping-hands-in-front-of-him-picture-id1126509424?k=20&m=1126509424&s=612x612&w=0&h=45MCjJAyNlQJqxEN4Kv9UVMd4VeVt-S7EjbvVC4WoCQ="
-            /> */}
-
           <Item>
             <Card
               style={{ height: "100%", width: "100%", backgroundColor: "red" }}
@@ -296,7 +285,7 @@ export default function PopularCollections() {
                         position: "absolute",
                         color: "white",
                         bottom: "2%",
-                        left: "25%",
+                        left: "184px",
                         transform: "translateX(-50%)",
                       }}
                     >
