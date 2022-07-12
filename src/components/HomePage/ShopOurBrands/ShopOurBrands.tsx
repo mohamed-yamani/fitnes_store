@@ -7,6 +7,7 @@ import {
   Card,
   Paper,
   CardMedia,
+  Container,
 } from "@material-ui/core";
 import Stack from "@mui/material/Stack";
 import useStyles from "./styles";
@@ -19,7 +20,7 @@ export const ShopOurBrands = () => {
   const isDesktop = useMediaQuery("(max-width:1920px)");
   const isWidescreen = useMediaQuery("(max-width:2560px)");
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <div style={{ width: "100vw" }}>
       <Typography
         className={classes.title}
         variant="h4"
@@ -29,67 +30,78 @@ export const ShopOurBrands = () => {
         {/* BestSellingProducts */}
         BEST SELLING PRODUCTS
       </Typography>
-      <div style={{ width: "100%" }}>
-        <Box
-          flexDirection={isMobile ? "column" : "row"}
-          justifyContent="center"
-          alignItems="center"
-          width="100%"
-          sx={{
-            flexGrow: 1,
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            alignItems: "center",
-            width: "100vw",
+      <div
+        style={{
+          width: "100%",
 
-            bgcolor: "red",
-            borderRadius: 1,
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+        }}
+      >
+        <CardMedia
+          style={{
+            height: "220px",
+            width: "220px",
+            backgroundColor: "red",
+            display: "initial",
           }}
-        >
-          <CardMedia
-            style={{
-              height: "220px",
-              width: "220px",
-              backgroundColor: "red",
-              display: "initial",
-            }}
-            component="img"
-            image="https://cdn.shopify.com/s/files/1/0728/8355/files/brand-adidas.jpg?v=1630483710"
-            alt="Paella dish"
-          />
-          <CardMedia
-            style={{ height: "220px", width: "220px", display: "initial" }}
-            component="img"
-            image="https://cdn.shopify.com/s/files/1/0728/8355/files/brand-blkbox.jpg?v=1630483711"
-            alt="Paella dish"
-          />
-          <CardMedia
-            style={{ height: "220px", width: "220px", display: "initial" }}
-            component="img"
-            image="https://cdn.shopify.com/s/files/1/0728/8355/files/brand-hyperice.jpg?v=1630483710"
-            alt="Paella dish"
-          />
-          <CardMedia
-            style={{ height: "220px", width: "220px", display: "initial" }}
-            component="img"
-            image="https://cdn.shopify.com/s/files/1/0728/8355/files/brand-nike.jpg?v=1630483710"
-            alt="Paella dish"
-          />
-          <CardMedia
-            style={{ height: "220px", width: "220px", display: "initial" }}
-            component="img"
-            image="https://cdn.shopify.com/s/files/1/0728/8355/files/brand-stance.jpg?v=1630483710"
-            alt="Paella dish"
-          />
-          <CardMedia
-            style={{ height: "220px", width: "220px", display: "initial" }}
-            component="img"
-            image="https://cdn.shopify.com/s/files/1/0728/8355/files/brand-underarmour.jpg?v=1630483710"
-            alt="Paella dish"
-          />
-        </Box>
+          component="img"
+          image="https://cdn.shopify.com/s/files/1/0728/8355/files/brand-adidas.jpg?v=1630483710"
+          alt="Paella dish1"
+        />
+        <CardMedia
+          style={{
+            height: "220px",
+            width: "220px",
+            display: "initial",
+          }}
+          component="img"
+          image="https://cdn.shopify.com/s/files/1/0728/8355/files/brand-blkbox.jpg?v=1630483711"
+          alt="Paella dish2"
+        />
+        <CardMedia
+          style={{
+            height: "220px",
+            width: "220px",
+            display: "initial",
+          }}
+          component="img"
+          image="https://cdn.shopify.com/s/files/1/0728/8355/files/brand-hyperice.jpg?v=1630483710"
+          alt="Paella dish3"
+        />
+        <CardMedia
+          style={{
+            height: "220px",
+            width: "220px",
+            display: "initial",
+          }}
+          component="img"
+          image="https://cdn.shopify.com/s/files/1/0728/8355/files/brand-nike.jpg?v=1630483710"
+          alt="Paella dish4"
+        />
+        <CardMedia
+          style={{
+            height: "220px",
+            width: "220px",
+            display: "initial",
+          }}
+          component="img"
+          image="https://cdn.shopify.com/s/files/1/0728/8355/files/brand-stance.jpg?v=1630483710"
+          alt="Paella dish5"
+        />
+        <CardMedia
+          style={{
+            height: "220px",
+            width: "220px",
+            display: "initial",
+          }}
+          component="img"
+          image="https://cdn.shopify.com/s/files/1/0728/8355/files/brand-underarmour.jpg?v=1630483710"
+          alt="Paella dish6"
+        />
       </div>
-    </Box>
+    </div>
   );
 };
